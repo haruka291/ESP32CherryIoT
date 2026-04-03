@@ -10,8 +10,8 @@ void setup() {
 
 void loop() {
   DHT.read();
-  float Temperature = DHT.getTemperature();
-  float Humidity = DHT.getHumidity();
+  float Temperature = DHT.getTemperature();//温度
+  float Humidity = DHT.getHumidity();      //湿度
   //Look at the serial monitor
   Serial.print(String(Temperature) + "℃");
   Serial.print(" / ");
