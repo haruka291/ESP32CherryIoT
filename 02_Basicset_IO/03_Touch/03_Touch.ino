@@ -8,10 +8,10 @@ void setup() {
 void loop() {
   //Look at the serial monitor
   if (digitalRead(touchPin) == HIGH) {
-    Serial.println("Touch!");
+    Serial.println("...");
     delay(200);
   } else {
-    Serial.println("...");
+    Serial.println("Not Touch!");
     delay(200);
   }
   delay(500);
