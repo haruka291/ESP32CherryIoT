@@ -14,16 +14,46 @@ const int spkrPin = 3; //3:ConnectorA 4:ConnectorB
 #define TI 493.883
 #define octDO 523.251
 
+
 void playmusic(){
+  // き(ド)
   ledcWriteTone(spkrPin, DO);
-  delay(250);
-  ledcWriteTone(spkrPin, RE);
-  delay(250);
-  ledcWriteTone(spkrPin, MI);
-  delay(250);
-  ledcWriteTone(spkrPin, 0); // no sound
-  delay(250);
-}
+  delay(350);
+  ledcWriteTone(spkrPin, 0); delay(50); // 音の切れ目
+
+  // ら(ド)
+  ledcWriteTone(spkrPin, DO);
+  delay(350);
+  ledcWriteTone(spkrPin, 0); delay(50);
+
+  // き(ソ)
+  ledcWriteTone(spkrPin, SO);
+  delay(350);
+  ledcWriteTone(spkrPin, 0); delay(50);
+
+  // ら(ソ)
+  ledcWriteTone(spkrPin, SO);
+  delay(350);
+  ledcWriteTone(spkrPin, 0); delay(50);
+
+  // ひ(ラ)
+  ledcWriteTone(spkrPin, RA);
+  delay(350);
+  ledcWriteTone(spkrPin, 0); delay(50);
+
+  // か(ラ)
+  ledcWriteTone(spkrPin, RA);
+  delay(350);
+  ledcWriteTone(spkrPin, 0); delay(50);
+
+  // る(ソ〜)
+  ledcWriteTone(spkrPin, SO);
+  delay(750); // 最後の音は2倍の長さで伸ばす
+  
+  // 次のフレーズへの間（無音）
+  ledcWriteTone(spkrPin, 0); 
+  delay(400);
+  }
 
 void setup() {
   pinMode(spkrPin, OUTPUT);
