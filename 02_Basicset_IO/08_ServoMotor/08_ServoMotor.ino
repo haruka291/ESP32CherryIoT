@@ -12,7 +12,7 @@ void loop() {
   // 0-180 right
   for(int angle = 0; angle <= 180; angle++) {                        
     myservo.write(angle);
-    delay(15);
+    delay(20);
   }
   // 180-0  left 
   for(int angle = 180; angle >= 0; angle--) {                 
