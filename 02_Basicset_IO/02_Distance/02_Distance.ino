@@ -22,8 +22,8 @@ void loop() {
   Distance = Duration*340*100/1000000; //Set sonic speed to 340 m/s
 
   //Look at the serial monitor
-  Serial.print("Distance:");
   Serial.print(Distance);
-  Serial.println("cm");
+  Serial.print("cm");
+  Serial.println(":Distance");
   delay(500);
 }
