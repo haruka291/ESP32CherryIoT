@@ -1,6 +1,6 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h> //by Adafruit
+#include <Adafruit_SSD1306.h> //by Adafruit 液晶を動かすためのドライバ
 
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
@@ -21,16 +21,18 @@ void setup()
 
   display.setTextSize(2);
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(0, 5);
+  display.setCursor(0, 5); 
   display.print(F("Hello"));
   display.setCursor(0, 25);
   display.print(F("ESP32"));
   display.setCursor(0, 45);
   display.print(F("CherryIoT"));
+  
 
   display.display();
 }
 
 void loop()
 {
+
 }
