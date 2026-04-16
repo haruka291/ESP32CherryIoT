@@ -18,11 +18,11 @@ void loop() {
   if(swState == 1){
     //Look at the serial monitor
     digitalWrite(vibPin, HIGH);
-    Serial.println("ON");
+    Serial.println("警告");
     delay(300);
   } else {
     digitalWrite(vibPin, LOW);
-    Serial.println("OFF");
+    Serial.println("平常");
     delay(300);
   }
 

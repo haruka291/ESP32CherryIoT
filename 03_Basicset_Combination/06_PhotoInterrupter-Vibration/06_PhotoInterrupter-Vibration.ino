@@ -11,7 +11,7 @@ void setup() {
 
 void loop() {
   if (digitalRead(ruptPin) == LOW) {
-    interruptCount++;
+    interruptCount++;//インクリメントしてカウントを進める
     Serial.println("Interrupt!");
     delay(300);
   }
